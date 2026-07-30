@@ -1,6 +1,6 @@
 # BlackLine Auto
 
-BlackLine Auto est un site vitrine de concessionnaire automobile en ligne conçu en HTML et CSS. Il présente une agence moderne avec une navigation simple, un univers visuel noir et élégant, et une sélection de véhicules premium.
+BlackLine Auto est un site de concessionnaire automobile en ligne conçu en HTML et CSS. Il présente une agence moderne avec une navigation simple, un univers visuel noir et élégant, et une sélection de véhicules premium.
 
 ## Pages principales
 
