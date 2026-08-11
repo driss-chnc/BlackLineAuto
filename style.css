@@ -318,3 +318,11 @@ Cartes des voitures
     gap: 30px;
     flex-wrap: wrap;
 }
+
+.car-content h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: white;
+    margin: 8px 0 15px;
+    margin-bottom: 20px;
+}
