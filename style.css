@@ -326,3 +326,240 @@ Cartes des voitures
     margin: 8px 0 15px;
     margin-bottom: 20px;
 }
+
+/* ==========================
+   PAGE VÉHICULE
+========================== */
+
+.vehicle-page {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+}
+
+/* Titre */
+
+.vehicle-page h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+}
+
+/* Grande image */
+
+.vehicle-image {
+    width: 100%;
+    max-height: 650px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 40px;
+}
+
+.vehicle-image img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Informations */
+
+.vehicle-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.vehicle-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+/* Caractéristiques */
+
+.vehicle-info {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    padding: 25px 0;
+    margin-bottom: 30px;
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.vehicle-info p {
+    margin: 0;
+    color: #ccc;
+}
+
+/* Description */
+
+.vehicle-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #ddd;
+    margin-bottom: 40px;
+}
+
+/* Bouton contact */
+
+.contact-btn {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ==========================
+   GALERIE DU VÉHICULE
+========================== */
+
+.vehicle-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4px;
+
+    width: 100%;
+    height: 600px;
+
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+.gallery-main {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-side {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 4px;
+
+    min-width: 0;
+    min-height: 0;
+}
+
+.gallery-photo {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+}
+
+.gallery-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.photo-modal {
+    display: none;
+
+    position: fixed;
+    z-index: 1000;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.95);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==========================
+   BOUTONS GALERIE
+========================== */
+
+.prev-photo,
+.next-photo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 45px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+    z-index: 1001;
+}
+
+.prev-photo {
+    left: 30px;
+}
+
+.next-photo {
+    right: 30px;
+}
+
+
+/* Survol des flèches */
+
+.prev-photo:hover,
+.next-photo:hover {
+    transform: translateY(-50%) scale(1.2);
+    opacity: 0.7;
+}
+
+
+/* ==========================
+   CROIX
+========================== */
+
+.close-modal {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+    background: none;
+    border: none;
+
+    color: white;
+    font-size: 40px;
+    font-weight: 300;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+    z-index: 1001;
+}
+
+
+/* Survol de la croix */
+
+.close-modal:hover {
+    transform: rotate(90deg) scale(1.15);
+    opacity: 0.7;
+}
