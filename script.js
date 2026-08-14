@@ -1,10 +1,33 @@
-const photos = [
-    "../images/BMW 330 i/330 i devant.png",
-    "../images/BMW 330 i/330 i côté.png",
-    "../images/BMW 330 i/330 i derrière.png",
-    "../images/BMW 330 i/330 i intérieur.png",
-    "../images/BMW 330 i/330i.png",
-];
+const car = document.querySelector(".vehicle-page").dataset.car;
+
+let photos = [];
+
+if (car === "BMW Série 3 330i G20") {
+    photos = [
+        "../images/BMW 330 i/330 i devant.png",
+        "../images/BMW 330 i/330 i côté.png",
+        "../images/BMW 330 i/330 i derrière.png",
+        "../images/BMW 330 i/330 i intérieur.png",
+        "../images/BMW 330 i/330i.png"
+    ];
+} else if (car === "Cupra Leon DSG 7") {
+    photos = [
+        "../images/Cupra Leon/leon.png",
+        "../images/Cupra Leon/leon côté.png",
+        "../images/Cupra Leon/leon arrière.png",
+        "../images/Cupra Leon/leon interieur.png",
+        "../images/Cupra Leon/leon avant.png"
+    ];
+} else if (car === "Peugeot 308 GTI") {
+    photos = [
+        "../images/Peugeot 308 GTI/308 GTI.png",
+        "../images/Peugeot 308 GTI/308 GTI côté.png",
+        "../images/Peugeot 308 GTI/308 GTI arrière.png",
+        "../images/Peugeot 308 GTI/308 GTI intérieur.png",
+        "../images/Peugeot 308 GTI/308 GTI avant.png"
+    ];
+}
+
 
 const modal = document.getElementById("photoModal");
 const modalImage = document.getElementById("modalImage");
