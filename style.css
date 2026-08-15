@@ -19,15 +19,6 @@ body {
 }
 
 /* ==========================
-   Header
-========================== */
-
-header {
-    padding: 20px 50px;
-    border-bottom: 1px solid #222;
-}
-
-/* ==========================
    Première ligne
 ========================== */
 
@@ -121,55 +112,185 @@ img {
     max-width: 100%;
 }
 
-/* ==========================
-   Ligne
-========================== */
-
-header {
-    border-bottom: 1px solid #2a2a2a;
-}
-
-/* ==========================
+/* =========================
    HERO
-========================== */
+========================= */
 
 .hero {
+    min-height: 650px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 
-    text-align: center;
+    padding: 80px;
 
-    min-height: 80vh;
+    background-image:
+        linear-gradient(
+            to bottom,
+            #000 0%,
+            rgba(0, 0, 0, 0.15) 15%,
+            rgba(0, 0, 0, 0.15) 80%,
+            #000 100%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.65) 35%,
+            rgba(0, 0, 0, 0.15) 100%
+        ),
+        url("images/hero.png");
 
-    padding: 0 50px;
+    background-size: cover;
+    background-position: center;
 }
 
-.hero h1 {
-    font-size: 4rem;
-    font-weight: 700;
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-subtitle {
+    display: block;
+
+    color: white;
+
+    font-size: 15px;
+    letter-spacing: 1px;
+
     margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.3rem;
-    color: #d1d1d1;
-    margin-bottom: 40px;
+.hero-subtitle::before {
+    content: "";
+
+    display: inline-block;
+
+    width: 45px;
+    height: 3px;
+
+    background: #c99a3d;
+
+    margin-right: 12px;
+
+    vertical-align: middle;
 }
 
-.hero .btn {
-    text-decoration: none;
+.hero h1 {
     color: white;
-    border: 2px solid white;
-    padding: 15px 35px;
-    border-radius: 8px;
-    transition: 0.3s;
+
+    font-size: 70px;
+    line-height: 0.95;
+
+    margin: 0 0 25px;
+
+    font-weight: 700;
 }
 
-.hero .btn:hover {
+.hero p {
+    color: #ddd;
+
+    font-size: 18px;
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-flex;
+
+    align-items: center;
+    gap: 35px;
+
+    padding: 18px 25px;
+
+    color: white;
+    text-decoration: none;
+
+    border: 1px solid white;
+    border-radius: 4px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.hero-btn span {
+    font-size: 22px;
+    transition: 0.3s ease;
+}
+
+.hero-btn:hover {
     background: white;
     color: black;
+}
+
+.hero-btn:hover span {
+    transform: translateX(6px);
+}
+
+/* =========================
+   AVANTAGES
+========================= */
+
+.advantages {
+    width: calc(100% - 100px);
+    margin: -35px auto 0;
+
+    padding: 30px 35px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+
+    background: rgba(10, 10, 10, 0.95);
+
+    border: 1px solid #1c1c1c;
+    border-radius: 10px;
+
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.advantage-icon {
+    width: 55px;
+    min-width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #c99a3d;
+    font-size: 38px;
+
+    border: 2px solid #c99a3d;
+    border-radius: 50%;
+}
+
+.advantage h3 {
+    margin: 0 0 8px;
+
+    color: white;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.advantage p {
+    margin: 0;
+
+    color: #aaa;
+
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 /* ==========================
@@ -294,6 +415,23 @@ Cartes des voitures
 .card-btn:hover::after {
     transform: scaleX(1);
     transform-origin: left;
+}
+
+.car-card img {
+    width: 100%;
+    display: block;
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        black 80%,
+        transparent 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        black 70%,
+        transparent 100%
+    );
 }
 
 /* ==========================

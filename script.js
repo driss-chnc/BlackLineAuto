@@ -26,6 +26,38 @@ if (car === "BMW Série 3 330i G20") {
         "../images/Peugeot 308 GTI/308 GTI intérieur.png",
         "../images/Peugeot 308 GTI/308 GTI avant.png"
     ];
+} else if (car === "Ferrari 458 Italia") {
+    photos = [
+        "../images/Ferrari 458 Italia/458.png",
+        "../images/Ferrari 458 Italia/458 côté.png",
+        "../images/Ferrari 458 Italia/458 arrière.png",
+        "../images/Ferrari 458 Italia/458 intérieur.png",
+        "../images/Ferrari 458 Italia/458 avant.png"
+    ];
+} else if (car === "Maserati Ghibli") {
+    photos = [
+        "../images/Maserati Ghibli/ghibli.png",
+        "../images/Maserati Ghibli/ghibli côté.png",
+        "../images/Maserati Ghibli/ghibli arrière.png",
+        "../images/Maserati Ghibli/ghibli intérieur.png",
+        "../images/Maserati Ghibli/ghibli avant.png"
+    ];
+} else if (car === "Porsche Macan") {
+    photos = [
+        "../images/Porsche Macan/macan.png",
+        "../images/Porsche Macan/macan côté.png",
+        "../images/Porsche Macan/macan arrière.png",
+        "../images/Porsche Macan/macan intérieur.png",
+        "../images/Porsche Macan/macan avant.png"
+    ];
+} else if (car === "Renault Megane 4 RS") {
+    photos = [
+        "../images/Renault Megane 4 RS/4 rs.png",
+        "../images/Renault Megane 4 RS/4 rs côté.png",
+        "../images/Renault Megane 4 RS/4 rs arrière.png",
+        "../images/Renault Megane 4 RS/4 rs intérieur.png",
+        "../images/Renault Megane 4 RS/4 rs avant.png"
+    ];
 }
 
 
