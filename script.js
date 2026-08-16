@@ -58,6 +58,38 @@ if (car === "BMW Série 3 330i G20") {
         "../images/Renault Megane 4 RS/4 rs intérieur.png",
         "../images/Renault Megane 4 RS/4 rs avant.png"
     ];
+}else if (car === "Audi Rs3") {
+    photos = [
+        "../images/Audi Rs3/rs3.png",
+        "../images/Audi Rs3/rs3 côté.png",
+        "../images/Audi Rs3/rs3 arrière.png",
+        "../images/Audi Rs3/rs3 intérieur.png",
+        "../images/Audi Rs3/rs3 avant.png"
+    ];
+}else if (car === "Audi RS3") {
+    photos = [
+        "../images/Audi RS3/rs3.png",
+        "../images/Audi RS3/rs3 côté.png",
+        "../images/Audi RS3/rs3 arrière.png",
+        "../images/Audi RS3/rs3 intérieur.png",
+        "../images/Audi RS3/rs3 avant.png"
+    ];
+}else if (car === "Corvette C7 Z06") {
+    photos = [
+        "../images/Corvette C7 Z06/c7.png",
+        "../images/Corvette C7 Z06/c7 côté.png",
+        "../images/Corvette C7 Z06/c7 arrière.png",
+        "../images/Corvette C7 Z06/c7 intérieur.png",
+        "../images/Corvette C7 Z06/c7 avant.png"
+    ];
+}else if (car === "Mercedes S63 AMG") {
+    photos = [
+        "../images/Mercedes S63 AMG/s63.png",
+        "../images/Mercedes S63 AMG/s63 côté.png",
+        "../images/Mercedes S63 AMG/s63 arrière.png",
+        "../images/Mercedes S63 AMG/s63 intérieur.png",
+        "../images/Mercedes S63 AMG/s63 avant.png"
+    ];
 }
 
 
