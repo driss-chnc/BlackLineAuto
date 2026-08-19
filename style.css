@@ -987,3 +987,657 @@ Cartes des voitures
     transform: rotate(90deg) scale(1.15);
     opacity: 0.7;
 }
+
+/* =========================
+   PAGE CONTACT
+========================= */
+
+.contact-page {
+    width: calc(100% - 100px);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+
+/* =========================
+   TITRE
+========================= */
+
+.contact-header {
+    margin-bottom: 70px;
+}
+
+.contact-header span {
+    color: #c99a3d;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact-header h1 {
+    color: white;
+    font-size: 48px;
+    margin: 12px 0 20px;
+}
+
+.contact-header p {
+    max-width: 600px;
+    color: #999;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================
+   CONTENEUR
+========================= */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 80px;
+}
+
+
+/* =========================
+   INFORMATIONS
+========================= */
+
+.contact-info {
+    padding-top: 10px;
+}
+
+.contact-info h2,
+.contact-form h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+.contact-info > p {
+    color: #999;
+    line-height: 1.7;
+    margin-bottom: 45px;
+}
+
+.contact-detail {
+    margin-bottom: 30px;
+}
+
+.contact-detail h3 {
+    color: #c99a3d;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.contact-detail p {
+    color: #ddd;
+    margin: 0;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FORMULAIRE
+========================= */
+
+.contact-form {
+    padding: 40px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    color: #ddd;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    color: white;
+    background: #080808;
+
+    border: 1px solid #292929;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #c99a3d;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555;
+}
+
+
+/* =========================
+   BOUTON
+========================= */
+
+.contact-btn {
+    width: 100%;
+    padding: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: white;
+    background: transparent;
+
+    border: 1px solid #777;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    color: #c99a3d;
+    border-color: #c99a3d;
+}
+
+.contact-btn span {
+    font-size: 20px;
+}
+
+/* =========================
+   PAGE SERVICES
+========================= */
+
+.services-page {
+    width: calc(100% - 100px);
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+
+/* INTRO */
+
+.services-intro {
+    margin-bottom: 70px;
+}
+
+.services-intro span {
+    color: #c99a3d;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.services-intro h1 {
+    margin: 12px 0 20px;
+
+    color: white;
+    font-size: 50px;
+}
+
+.services-intro p {
+    max-width: 650px;
+
+    color: #999;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* GRILLE */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* CARTE */
+
+.service-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c99a3d;
+}
+
+
+/* NUMÉRO */
+
+.service-number {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    color: #333;
+
+    font-size: 35px;
+    font-weight: 600;
+}
+
+
+/* ICÔNE */
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    color: #c99a3d;
+
+    border: 1px solid #c99a3d;
+    border-radius: 50%;
+
+    font-size: 23px;
+}
+
+
+/* TITRE */
+
+.service-card h2 {
+    margin: 0 0 15px;
+
+    color: white;
+
+    font-size: 20px;
+}
+
+
+/* DESCRIPTION */
+
+.service-card p {
+    margin: 0 0 25px;
+
+    color: #888;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+
+/* LIEN */
+
+.service-card a {
+    color: white;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition: 0.3s ease;
+}
+
+.service-card a:hover {
+    color: #c99a3d;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.services-cta {
+    margin-top: 70px;
+
+    padding: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+    border-radius: 10px;
+}
+
+.services-cta span {
+    color: #c99a3d;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.services-cta h2 {
+    margin: 10px 0 0;
+
+    color: white;
+
+    font-size: 30px;
+    line-height: 1.2;
+}
+
+.services-cta a {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 15px 20px;
+
+    color: white;
+
+    border: 1px solid #555;
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 11px;
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.services-cta a:hover {
+    color: #c99a3d;
+
+    border-color: #c99a3d;
+}
+
+.services-cta a span {
+    color: inherit;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .services-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .services-page {
+        width: calc(100% - 40px);
+        padding: 60px 0;
+    }
+
+    .services-intro h1 {
+        font-size: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =========================
+   AUTHENTIFICATION
+========================= */
+
+.auth-page {
+    min-height: calc(100vh - 100px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    box-sizing: border-box;
+}
+
+
+.auth-box {
+    width: 100%;
+    max-width: 480px;
+
+    padding: 45px;
+
+    background: #0d0d0d;
+
+    border: 1px solid #222;
+    border-radius: 10px;
+
+    box-sizing: border-box;
+}
+
+
+/* TITRE */
+
+.auth-header {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.auth-header span {
+    color: #c99a3d;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+}
+
+.auth-header h1 {
+    margin: 10px 0 12px;
+
+    color: white;
+
+    font-size: 32px;
+}
+
+.auth-header p {
+    margin: 0;
+
+    color: #777;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* FORMULAIRE */
+
+.auth-box .form-group {
+    margin-bottom: 20px;
+}
+
+.auth-box .form-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ddd;
+
+    font-size: 13px;
+}
+
+.auth-box .form-group input {
+    width: 100%;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    color: white;
+    background: #080808;
+
+    border: 1px solid #292929;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.auth-box .form-group input:focus {
+    border-color: #c99a3d;
+}
+
+.auth-box .form-group input::placeholder {
+    color: #555;
+}
+
+
+/* BOUTON */
+
+.auth-btn {
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 16px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    background: transparent;
+
+    border: 1px solid #555;
+    border-radius: 5px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.auth-btn:hover {
+    color: #c99a3d;
+
+    border-color: #c99a3d;
+}
+
+.auth-btn span {
+    font-size: 20px;
+}
+
+
+/* FOOTER */
+
+.auth-footer {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+.auth-footer p {
+    color: #666;
+
+    font-size: 12px;
+}
+
+.auth-footer a {
+    color: #c99a3d;
+
+    text-decoration: none;
+}
+
+.auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MOT DE PASSE OUBLIÉ
+========================= */
+
+.forgot-password {
+    margin-top: -8px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.forgot-password a {
+    color: #777;
+    font-size: 12px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.forgot-password a:hover {
+    color: #c99a3d;
+}

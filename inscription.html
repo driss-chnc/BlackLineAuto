@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inscription - BlackLine Auto</title>
+
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/inscription.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="top-header">
+
+            <a href="index.html">
+                <img src="images/logo.png" alt="BlackLine Auto">
+            </a>
+
+            <nav class="navigation">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="vehicules.html">Véhicules</a></li>
+                    <li><a href="sportives.html">Sportives</a></li>
+                    <li><a href="electriques.html">Électriques</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="connexion">
+                <a href="connexion.html">Connexion</a>
+                <a href="inscription.html">Inscription</a>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="auth-page">
+
+        <div class="auth-box">
+
+            <div class="auth-header">
+
+                <span>BLACKLINE AUTO</span>
+
+                <h1>Créer un compte</h1>
+
+                <p>
+                    Créez votre compte pour accéder à votre espace personnel.
+                </p>
+
+            </div>
+
+
+            <form id="register-form">
+
+                <div class="form-group">
+
+                    <label for="firstname">Prénom</label>
+
+                    <input
+                        type="text"
+                        id="firstname"
+                        name="firstname"
+                        placeholder="Votre prénom"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="lastname">Nom</label>
+
+                    <input
+                        type="text"
+                        id="lastname"
+                        name="lastname"
+                        placeholder="Votre nom"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="email">Adresse email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="votre@email.com"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="password">Mot de passe</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Votre mot de passe"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="confirm-password">
+                        Confirmer le mot de passe
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirm-password"
+                        name="confirm-password"
+                        placeholder="Confirmez votre mot de passe"
+                        required
+                    >
+
+                </div>
+
+
+                <button type="submit" class="auth-btn">
+                    CRÉER MON COMPTE
+                    <span>→</span>
+                </button>
+
+            </form>
+
+
+            <div class="auth-footer">
+
+                <p>
+                    Vous avez déjà un compte ?
+                    <a href="connexion.html">Se connecter</a>
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
